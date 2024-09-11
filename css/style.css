@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 25%;
+    background-color: white;
+    border-radius: 12px;
+    padding-bottom: 20px;
+}
+
+.wrapper .container .card-image {
+    width: 100%;
+}
+
+.wrapper .container .card-image img {
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper .container .card-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 35px;
+}
+
+.wrapper .container .card-content h2 {
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    padding-bottom: 20px;
+}
+
+.wrapper .container .card-content p {
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display';
+}
+
+.wrapper .container .card-content .annual-plan {
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 6px;
+    margin: 30px 0 30px 0;
+}
+
+.wrapper .container .card-content .plan-left {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .container .card-content .plan-left .price {
+    padding-left: 10px;
+}
+
+.wrapper .container .card-content .annual-plan .colored-text {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.wrapper .container .card-content .annual-plan .link a {
+    text-decoration: none;
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.wrapper .container .card-content button {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: hsl(225, 100%, 98%);
+    border: 1px solid hsl(225, 100%, 98%);
+    border-radius: 8px;
+    font-family: 'Red Hat Display';
+    color: hsl(224, 23%, 55%);
+    transition: 0.7s all;
+}
+
+.wrapper .container .card-content button:hover {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    transform: scale(1.05, 1.05);
+}
+
+@media (max-width: 1240px) {
+    .wrapper .container {
+        width: 30%;
+    }
+
+    .wrapper .container .card-content .h2 {
+        font-size: 1.4rem;
+    }
+
+    .wrapper .container .card-content p,
+    .wrapper .container .card-content .annual-plan .plan-left .price p,
+    .wrapper .container .card-content .annual-plan .link a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper .container {
+        width: 35%;
+    }
+
+    .wrapper .container .card-content .h2 {
+        font-size: 1.3rem;
+    }
+
+    .wrapper .container .card-content p,
+    .wrapper .container .card-content .annual-plan .plan-left .price p,
+    .wrapper .container .card-content .annual-plan .link a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .wrapper .container {
+        width: 45%;
+    }
+
+    .wrapper .container .card-content .h2 {
+        font-size: 1.2rem;
+    }
+
+    .wrapper .container .card-content p,
+    .wrapper .container .card-content .annual-plan .plan-left .price p,
+    .wrapper .container .card-content .annual-plan .link a {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper .container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 450px) {
+    .wrapper {
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+
+    .wrapper .container {
+        width: 70%;
+    }
+
+    .wrapper .container .card-content {
+        padding: 15px 20px;
+    }
+}
